@@ -59,125 +59,124 @@ clean_names.R
 		3 - Converts all labels to lowercase
 
 ## Data Dictionary
-
-SUBJECT_ID
-	Size: 1
-	Type: numeric
-	Description: ID for each of the subjects in the experiment
-	Range: 1 - 30
-
-ACTIVITY_ID
-	Size: 1
-	Type: numeric
-	Description: ID for each activity performed by each subject, see ACTIVITY_NAME for description of activity
-	Range: 1 - 6
-
-ACTIVITY_NAME
-	Size: 6 - 18
-	Type: alphabetic
-	Description: Descriptive name of the activity performed by each subject
-	Values: 
-		WALKING
-		WALKING_UPSTAIRS
-		WALKING_DOWNSTAIRS
-		SITTING
-		STANDING
-		LAYING
-
-VARIABLE
-	Size: 20 - 52
-	Type: alphabetic
-	Description: Name of the variable measured for each activity performed by each subject, see value transformation in
-	original_names.txt file
-	Values:
-		time_body_acceleration_mean_on_x
-		time_body_acceleration_mean_on_y
-		time_body_acceleration_mean_on_z
-		time_body_acceleration_std_dev_on_x
-		time_body_acceleration_std_dev_on_y
-		time_body_acceleration_std_dev_on_z
-		time_gravity_acceleration_mean_on_x
-		time_gravity_acceleration_mean_on_y
-		time_gravity_acceleration_mean_on_z
-		time_gravity_acceleration_std_dev_on_x
-		time_gravity_acceleration_std_dev_on_y
-		time_gravity_acceleration_std_dev_on_z
-		time_body_acceleration_jerk_mean_on_x
-		time_body_acceleration_jerk_mean_on_y
-		time_body_acceleration_jerk_mean_on_z
-		time_body_acceleration_jerk_std_dev_on_x
-		time_body_acceleration_jerk_std_dev_on_y
-		time_body_acceleration_jerk_std_dev_on_z
-		time_body_gyroscope_mean_on_x
-		time_body_gyroscope_mean_on_y
-		time_body_gyroscope_mean_on_z
-		time_body_gyroscope_std_dev_on_x
-		time_body_gyroscope_std_dev_on_y
-		time_body_gyroscope_std_dev_on_z
-		time_body_gyroscope_jerk_mean_on_x
-		time_body_gyroscope_jerk_mean_on_y
-		time_body_gyroscope_jerk_mean_on_z
-		time_body_gyroscope_jerk_std_dev_on_x
-		time_body_gyroscope_jerk_std_dev_on_y
-		time_body_gyroscope_jerk_std_dev_on_z
-		time_body_acceleration_magnitude_mean
-		time_body_acceleration_magnitude_std_dev
-		time_gravity_acceleration_magnitude_mean
-		time_gravity_acceleration_magnitude_std_dev
-		time_body_acceleration_jerk_magnitude_mean
-		time_body_acceleration_jerk_magnitude_std_dev
-		time_body_gyroscope_magnitude_mean
-		time_body_gyroscope_magnitude_std_dev
-		time_body_gyroscope_jerk_magnitude_mean
-		time_body_gyroscope_jerk_magnitude_std_dev
-		frequency_body_acceleration_mean_on_x
-		frequency_body_acceleration_mean_on_y
-		frequency_body_acceleration_mean_on_z
-		frequency_body_acceleration_std_dev_on_x
-		frequency_body_acceleration_std_dev_on_y
-		frequency_body_acceleration_std_dev_on_z
-		frequency_body_acceleration_mean_freq_on_x
-		frequency_body_acceleration_mean_freq_on_y
-		frequency_body_acceleration_mean_freq_on_z
-		frequency_body_acceleration_jerk_mean_on_x
-		frequency_body_acceleration_jerk_mean_on_y
-		frequency_body_acceleration_jerk_mean_on_z
-		frequency_body_acceleration_jerk_std_dev_on_x
-		frequency_body_acceleration_jerk_std_dev_on_y
-		frequency_body_acceleration_jerk_std_dev_on_z
-		frequency_body_acceleration_jerk_mean_freq_on_x
-		frequency_body_acceleration_jerk_mean_freq_on_y
-		frequency_body_acceleration_jerk_mean_freq_on_z
-		frequency_body_gyroscope_mean_on_x
-		frequency_body_gyroscope_mean_on_y
-		frequency_body_gyroscope_mean_on_z
-		frequency_body_gyroscope_std_dev_on_x
-		frequency_body_gyroscope_std_dev_on_y
-		frequency_body_gyroscope_std_dev_on_z
-		frequency_body_gyroscope_mean_freq_on_x
-		frequency_body_gyroscope_mean_freq_on_y
-		frequency_body_gyroscope_mean_freq_on_z
-		frequency_body_acceleration_magnitude_mean
-		frequency_body_acceleration_magnitude_std_dev
-		frequency_body_acceleration_magnitude_mean_freq
-		frequency_body_acceleration_jerk_magnitude_mean
-		frequency_body_acceleration_jerk_magnitude_std_dev
-		frequency_body_acceleration_jerk_magnitude_mean_freq
-		frequency_body_gyroscope_magnitude_mean
-		frequency_body_gyroscope_magnitude_std_dev
-		frequency_body_gyroscope_magnitude_mean_freq
-		frequency_body_gyroscope_jerk_magnitude_mean
-		frequency_body_gyroscope_jerk_magnitude_std_dev
-		frequency_body_gyroscope_jerk_magnitude_mean_freq
-		angle_time body_acceleration_mean_gravity_
-		angle_time body_acceleration_jerk_mean_gravity_mean
-		angle_time body_gyroscope_mean_gravity_mean
-		angle_time body_gyroscope_jerk_mean_gravity_mean
-		angle_x_gravity_mean
-		angle_y_gravity_mean
-		angle_z_gravity_mean
-
-MEAN
-	Type: numeric
-	Description: Calculated mean for each of the variables measured for each activity performed by each subject
-	 
+	
+		SUBJECT_ID
+			Size: 1
+			Type: numeric
+			Description: ID for each of the subjects in the experiment
+			Value range: 1 - 30
+		ACTIVITY_ID
+			Size: 1
+			Type: numeric
+			Description: ID for each activity performed by each subject, see 
+			ACTIVITY_NAME for description of activity
+			Value range: 1 - 6
+		ACTIVITY_NAME
+			Size: 6 - 18
+			Type: alphabetic
+			Description: Descriptive name of the activity performed by each 
+			subject
+			Values: 
+				WALKING
+				WALKING_UPSTAIRS
+				WALKING_DOWNSTAIRS
+				SITTING
+				STANDING
+				LAYING
+		VARIABLE
+			Size: 20 - 52
+			Type: alphabetic
+			Description: Name of the variable measured for each activity 
+			performed by each subject, see value transformation in
+			original_names.txt file
+			Values:
+				time_body_acceleration_mean_on_x
+				time_body_acceleration_mean_on_y
+				time_body_acceleration_mean_on_z
+				time_body_acceleration_std_dev_on_x
+				time_body_acceleration_std_dev_on_y
+				time_body_acceleration_std_dev_on_z
+				time_gravity_acceleration_mean_on_x
+				time_gravity_acceleration_mean_on_y
+				time_gravity_acceleration_mean_on_z
+				time_gravity_acceleration_std_dev_on_x
+				time_gravity_acceleration_std_dev_on_y
+				time_gravity_acceleration_std_dev_on_z
+				time_body_acceleration_jerk_mean_on_x
+				time_body_acceleration_jerk_mean_on_y
+				time_body_acceleration_jerk_mean_on_z
+				time_body_acceleration_jerk_std_dev_on_x
+				time_body_acceleration_jerk_std_dev_on_y
+				time_body_acceleration_jerk_std_dev_on_z
+				time_body_gyroscope_mean_on_x
+				time_body_gyroscope_mean_on_y
+				time_body_gyroscope_mean_on_z
+				time_body_gyroscope_std_dev_on_x
+				time_body_gyroscope_std_dev_on_y
+				time_body_gyroscope_std_dev_on_z
+				time_body_gyroscope_jerk_mean_on_x
+				time_body_gyroscope_jerk_mean_on_y
+				time_body_gyroscope_jerk_mean_on_z
+				time_body_gyroscope_jerk_std_dev_on_x
+				time_body_gyroscope_jerk_std_dev_on_y
+				time_body_gyroscope_jerk_std_dev_on_z
+				time_body_acceleration_magnitude_mean
+				time_body_acceleration_magnitude_std_dev
+				time_gravity_acceleration_magnitude_mean
+				time_gravity_acceleration_magnitude_std_dev
+				time_body_acceleration_jerk_magnitude_mean
+				time_body_acceleration_jerk_magnitude_std_dev
+				time_body_gyroscope_magnitude_mean
+				time_body_gyroscope_magnitude_std_dev
+				time_body_gyroscope_jerk_magnitude_mean
+				time_body_gyroscope_jerk_magnitude_std_dev
+				frequency_body_acceleration_mean_on_x
+				frequency_body_acceleration_mean_on_y
+				frequency_body_acceleration_mean_on_z
+				frequency_body_acceleration_std_dev_on_x
+				frequency_body_acceleration_std_dev_on_y
+				frequency_body_acceleration_std_dev_on_z
+				frequency_body_acceleration_mean_freq_on_x
+				frequency_body_acceleration_mean_freq_on_y
+				frequency_body_acceleration_mean_freq_on_z
+				frequency_body_acceleration_jerk_mean_on_x
+				frequency_body_acceleration_jerk_mean_on_y
+				frequency_body_acceleration_jerk_mean_on_z
+				frequency_body_acceleration_jerk_std_dev_on_x
+				frequency_body_acceleration_jerk_std_dev_on_y
+				frequency_body_acceleration_jerk_std_dev_on_z
+				frequency_body_acceleration_jerk_mean_freq_on_x
+				frequency_body_acceleration_jerk_mean_freq_on_y
+				frequency_body_acceleration_jerk_mean_freq_on_z
+				frequency_body_gyroscope_mean_on_x
+				frequency_body_gyroscope_mean_on_y
+				frequency_body_gyroscope_mean_on_z
+				frequency_body_gyroscope_std_dev_on_x
+				frequency_body_gyroscope_std_dev_on_y
+				frequency_body_gyroscope_std_dev_on_z
+				frequency_body_gyroscope_mean_freq_on_x
+				frequency_body_gyroscope_mean_freq_on_y
+				frequency_body_gyroscope_mean_freq_on_z
+				frequency_body_acceleration_magnitude_mean
+				frequency_body_acceleration_magnitude_std_dev
+				frequency_body_acceleration_magnitude_mean_freq
+				frequency_body_acceleration_jerk_magnitude_mean
+				frequency_body_acceleration_jerk_magnitude_std_dev
+				frequency_body_acceleration_jerk_magnitude_mean_freq
+				frequency_body_gyroscope_magnitude_mean
+				frequency_body_gyroscope_magnitude_std_dev
+				frequency_body_gyroscope_magnitude_mean_freq
+				frequency_body_gyroscope_jerk_magnitude_mean
+				frequency_body_gyroscope_jerk_magnitude_std_dev
+				frequency_body_gyroscope_jerk_magnitude_mean_freq
+				angle_time body_acceleration_mean_gravity_
+				angle_time body_acceleration_jerk_mean_gravity_mean
+				angle_time body_gyroscope_mean_gravity_mean
+				angle_time body_gyroscope_jerk_mean_gravity_mean
+				angle_x_gravity_mean
+				angle_y_gravity_mean
+				angle_z_gravity_mean
+		MEAN
+			Type: numeric
+			Description: Calculated mean for each of the variables 
+			measured for each activity performed by each subject
