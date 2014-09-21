@@ -88,7 +88,7 @@ clean_names.R
 			Type: alphabetic
 			Description: Name of the variable measured for each activity 
 			performed by each subject, see value transformation in
-			original_names.txt file
+			name_change.txt file
 			Values:
 				time_body_acceleration_mean_on_x
 				time_body_acceleration_mean_on_y
